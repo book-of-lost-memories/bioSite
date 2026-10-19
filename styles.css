@@ -1,0 +1,211 @@
+/* 
+  Ra Lindsey
+  10/18/2026
+  Module 6.3 Assignment
+*/
+
+/* 
+  Colour palette guide:
+  Crimson Red - #B71C1C
+  Muted Pink - #D4888C 
+  Light Pink - #FCE4EC
+  Pink-Tinted Cream - #FAF5F5 
+  Dark Maroon - #3E0A0A  
+*/
+
+/*
+  Font guide:
+  Headings: Times New Roman
+  Body: Perpetua
+*/
+
+/* Site wrapper */
+.site-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #FAF5F5;
+    border: 2px solid #D4888C;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 40px);
+}
+
+/* Body styling */
+body {
+    font-family: 'Perpetua', serif;
+    background-color: #FCE4EC;
+    color: #3E0A0A;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Header and navigation */
+header {
+    background-color: transparent;
+    padding: 0 0 20px 0;
+    border-bottom: 2px solid #D4888C;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Times New Roman', serif;
+    color: #B71C1C;
+    font-size: 3em;
+    margin: 0 0 15px 0;
+    display: block;
+    border-bottom: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3E0A0A;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #B71C1C;
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: 'Times New Roman', serif;
+    color: #B71C1C;
+}
+
+h1 {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 2em;
+    color: #D4888C;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #B71C1C;
+}
+
+/* Main content */
+main {
+    flex: 1;
+    padding: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #B71C1C;
+    color: #FAF5F5;      
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #D4888C;
+    color: #FAF5F5;
+}
+
+/* Hobbies Grid */
+.hobbies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.hobby-item {
+    margin: 0;
+    text-align: center;
+    flex: 0 0 150px;
+}
+
+.hobby-item figcaption {
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+/* About layout */
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bio-text {
+    flex: 1 1 300px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #D4888C;
+    font-size: 0.9em;
+    color: #3E0A0A;
+    margin-top: auto;
+}
+
+/* Links */
+a {
+    color: #B71C1C;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #D4888C;
+    text-decoration: underline;
+}
+
+/* Global circular images */
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #D4888C;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Captions below the image */
+figcaption {
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    color: #3E0A0A;
+    text-transform: uppercase;
+}
